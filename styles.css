@@ -1,0 +1,568 @@
+:root {
+  --purple: #6d3d81;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+header,
+footer {
+  display: flex;
+  background-color: var(--purple);
+  width: 100%;
+  height: 15vh;
+  justify-content: space-between;
+  padding-left: 3vw;
+}
+
+#logo-header {
+  width: 20vw;
+  max-width: 200px;
+  height: auto;
+  max-height: 100px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 15px;
+}
+#header-text > h4 {
+  margin: 5vh 40px;
+}
+#header-text {
+  display: flex;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  color: aliceblue;
+  margin-top: 1vh;
+  padding-right: 3vw;
+  width: 65%;
+  height: 5vh;
+  justify-content: flex-end;
+}
+#header-text > h4 > a {
+  color: aliceblue;
+}
+
+@media only screen and (max-width: 450px) {
+  body {
+    font-size: 12px;
+  }
+  #header-text,
+  #paginas,
+  #contato {
+    margin: auto 20px auto 15px;
+    font-size: 13px !important;
+    justify-content: space-between;
+  }
+
+  #header-text > h4 {
+    margin: 5px;
+  }
+
+  #conteudo-footer{
+    padding: 0 !important;
+    left: 0;
+  }
+
+  #logo-footer {
+    width: 20vw;
+  }
+
+  #conteudo-geralSN {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #conteudo-sobre-nos {
+    order: 2;
+  }
+  #conteudo-sobre-nos > p {
+    text-align: justify !important;
+  }
+  #primeiro-paragrafo {
+    margin-right: 20vw;
+  }
+  #segundo-paragrafo {
+    margin-right: 15px;
+  }
+
+  #logo-catog {
+    order: 1;
+    position: absolute;
+    margin-top: 40px;
+    right: 0;
+    width: 20vw;
+    height: 30%;
+  }
+  #logo-sobreNos {
+    width: 100%;
+  }
+
+  .logo-ong > :first-child {
+    display: none;
+  }
+
+  .ongs {
+    align-items: center;
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+  #cao-sem-dono,
+  #gatopoles,
+  #doce-lar {
+    padding: 0;
+    margin: 0;
+    text-align: justify;
+  }
+  #cao-sem-dono > .conteudo-ong > .sobre-ong > :first-child + ::after {
+    content: ""; /* Cria um espaço onde a imagem será inserida */
+    display: block;
+    margin-top: 20px;
+    background-image: url("imagens/cao_sem_dono.png"); /* Adiciona a imagem */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 130px;
+    width: 100%;
+  }
+
+  #gatopoles > .conteudo-ong > .sobre-ong > :first-child + ::after {
+    content: "";
+    display: block;
+    margin-top: 20px;
+    background-image: url("imagens/gatopoleslogo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 130px;
+    width: 100%;
+  }
+
+  #doce-lar > .conteudo-ong > .sobre-ong > :first-child + ::after {
+    content: "";
+    display: block;
+    margin-top: 20px;
+    background-image: url("imagens/logo-doceLar.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 130px;
+    width: 100%;
+  }
+  .container-carrosel {
+    justify-content: space-around !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 300px;
+  }
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  #arrow-left {
+    left: 0;
+  }
+  #arrow-right {
+    right: 0;
+    margin-right: 15px;
+  }
+
+  #banner img {
+    content: url(imagens/banner-roxo2Tablet.png);
+    height: 150px !important;
+  }
+  .animal {
+    padding: 0 5px;
+    height: 200px !important;
+  }
+
+  .animal > img {
+    height: 160px !important;
+  }
+
+  #modalButton {
+    margin: 0 10% !important;
+  }
+}
+
+@media screen and (min-width: 451px) and (max-width: 700px) {
+  header {
+    justify-content: space-between;
+    padding: 5px !important;
+  }
+  header > img {
+    margin-left: 15px !important;
+  }
+  #header-text {
+    justify-content: space-between;
+    width: 70%;
+    font-size: 14px !important;
+    margin-right: 10px;
+  }
+  #conteudo-sobre-nos > p {
+    text-align: justify !important;
+  }
+  .container-carrosel {
+    justify-content: space-around !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 400px;
+  }
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  #arrow-left {
+    left: 0;
+  }
+  #arrow-right {
+    right: 0;
+    margin-right: 15px;
+  }
+
+  #banner img {
+    content: url(imagens/banner-roxo2Tablet.png);
+    height: 150px !important;
+  }
+
+  #paginas > h5 {
+    margin-top: 5px;
+  }
+  #paginas,
+  #contato {
+    font-size: 16px !important;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .modal {
+    width: 90% !important;
+    left: 5% !important;
+    top: 5% !important;
+    min-width: auto !important;
+    max-width: none !important;
+    height: 90% !important;
+    min-height: auto !important;
+    overflow: auto;
+  }
+
+  .modal-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #modalImg {
+    width: 100%;
+    height: auto;
+    max-width: none;
+    max-height: 50vh;
+  }
+
+  #modalText {
+    text-align: center;
+    padding-left: 20px;
+    width: 100%;
+  }
+
+  #modalButton {
+    margin-top: 20px;
+    width: 100%;
+  }
+}
+
+footer {
+  color: aliceblue;
+  position: relative;
+  bottom: 0;
+  height: 20vh;
+  align-items: center;
+}
+#conteudo-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  height: 80%;
+  align-items: center;
+  padding-left: 10px;
+}
+#conteudo-footer > img {
+  max-width: 150px;
+  max-height: 100px;
+}
+#contato {
+  display: flex;
+  height: 100%;
+}
+#paginas,
+#contato {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10px;
+  height: 90%;
+  border-left: 1px solid aliceblue;
+  text-align: center;
+  font-size: 16px;
+}
+
+#contato {
+  height: 50%;
+}
+#fale-conosco {
+  margin-bottom: 0;
+}
+footer > #conteudo-footer > #paginas > h5 > a {
+  color: aliceblue;
+}
+footer > #contato > h4 {
+  margin-top: 10px;
+}
+
+h3,
+h2 {
+  text-align: center;
+}
+#sobre-nos {
+  display: flex;
+  margin-top: 15px;
+  padding-left: 20px;
+}
+.conteudo-geral {
+  min-height: calc(100vh - 30vh);
+}
+#conteudo-sobre-nos > p {
+  text-align: center;
+  padding-left: 15px;
+  font-size: 16px;
+}
+#logo-catog {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  #sobre-nos {
+    flex-direction: column;
+  }
+
+  #logo-catog {
+    margin-top: 20px;
+    justify-content: center;
+  }
+}
+
+a:link {
+  color: aliceblue;
+  text-decoration-line: none;
+}
+a:hover {
+  text-decoration-line: underline;
+}
+#animal {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.ongs {
+  margin-top: 25px;
+}
+.conteudo-ong {
+  display: flex;
+  margin-bottom: 40px;
+}
+.sobre-ong {
+  margin: 0 50px;
+}
+.logo-ong {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+.logo-ong > img {
+  margin: 0 30px;
+  width: 20vw;
+  height: 20vh;
+  align-items: center;
+}
+#logo-DoceLar,
+#logo-Gatopoles {
+  width: 15vw;
+  height: 15vw;
+}
+
+#banner {
+  display: flex;
+  justify-content: center;
+  width: 98vw;
+  margin: 0;
+  margin-bottom: 50px;
+}
+#banner > img {
+  width: 90vw;
+  height: 40vh;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.cidades > .nome-cidade {
+  text-align: left;
+  padding-left: 4vw;
+}
+
+.container-carrosel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+}
+.container-carrosel > h3 {
+  text-align: left;
+  padding-left: 4vw;
+}
+.carrosel {
+  display: flex;
+  transition: transform 0.5s ease;
+  padding: 0 4vw;
+  overflow: hidden;
+  justify-content: space-around;
+  height: 350px;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  padding: 5px;
+}
+#arrow-left {
+  left: 0;
+  margin-left: 15px;
+}
+#arrow-right {
+  right: 0;
+  margin-right: 15px;
+}
+
+.animal {
+  width: 200px;
+  height: auto;
+  text-align: left;
+}
+.animal:hover {
+  cursor: pointer;
+  .nome-animal {
+    text-decoration: underline;
+  }
+}
+.animal > img {
+  width: 100%;
+  height: 60%;
+}
+
+.animal > .nome-animal {
+  text-align: center;
+  margin: 0;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 20%;
+  top: 10%;
+  width: 50%;
+  min-width: 500px;
+  height: 75%;
+  min-height: 300px;
+  max-height: 500px;
+  background-color: rgba(255, 252, 252);
+  overflow: auto;
+  border: solid var(--purple);
+}
+.modal > span {
+  margin-right: 10px;
+  font-size: 30px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  padding: 0 20px 10px 20px;
+  width: 90%;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  margin: 15px auto;
+}
+
+#modalImg {
+  width: 49%;
+  height: 70%;
+  max-width: 300px;
+  max-height: 350px;
+  margin-top: 10%;
+}
+
+#modalText {
+  text-align: left;
+  margin-left: 15px;
+  font-size: large;
+  width: 300px;
+}
+#modal > a {
+  color: #6d3d81;
+}
+
+#animalDescription > p > a:link {
+  text-decoration: none;
+  color: var(--purple);
+}
+#animalDescription > p > a:hover {
+  text-decoration: underline;
+}
+#modalText > p {
+  padding-left: 15px;
+}
+#modalButton {
+  background-color: var(--purple);
+  margin-top: 30px;
+  width: 70%;
+  margin-left: 20%;
+  padding-top: 15px;
+  text-align: center;
+  height: 40px;
+  border-radius: 15px;
+}
+#modalButton > a {
+  color: aliceblue;
+  height: 10px;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

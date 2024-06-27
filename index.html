@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Catog</title>
+  </head>
+  <body>
+    <header>
+      <img src="imagens/logoNova-SF2.png" alt="logo Catog" id="logo-header" />
+      <div id="header-text">
+        <h4><a href="sobre-nos.html"> Sobre nós </a></h4>
+        <h4><a href="instituicoes.html"> Instituições </a></h4>
+        <h4><a href="index.html"> Adote </a></h4>
+      </div>
+    </header>
+    <div class="conteudo-geral">
+      <div id="banner">
+        <img
+          src="imagens/banner-roxo3.png"
+          alt="imagem com um desenho de cachorro e um de gato, entre eles há a frase 'a felicidade tem quatro patas'"
+        />
+      </div>
+      <div class="cidades" id="sao-paulo">
+        <h2 class="nome-cidade">São Paulo, SP</h2>
+        <div class="container-carrosel">
+          <h3>Cachorros</h3>
+          <div class="arrow" id="arrow-left" onclick="prevSlide('carrosel1')">
+            <img
+              src="imagens/seta-esquerda.png"
+              alt="seta para a esquerda"
+              width="20px"
+              height="20px"
+            />
+          </div>
+          <div class="carrosel" id="carrosel1">
+            <div
+              class="animal"
+              onclick="openModal('imagens/alex.png', {
+                    animalName: 'Alex', 
+                    sexo: 'Sexo: Macho',
+                    pelagem: 'Pelagem: Preta',
+                    peso: 'Peso: 33Kg',
+                    nascimento: 'Ano de Nascimento: 2015',
+                    raca: 'Raça: SRD',
+                    link: 'https://www.caosemdono.com.br/adote'})"
+            >
+              <img
+                src="imagens/alex.png"
+                alt="cachorro na grama com a língua para fora"
+              />
+              <h4 class="nome-animal">Alex</h4>
+            </div>
+            <div
+              class="animal"
+              onclick="openModal('imagens/Batman.png', {
+                        animalName: 'Batman', 
+                        sexo: 'Sexo: Macho',
+                        pelagem: 'Pelagem: Preta',
+                        peso: 'Peso: 20Kg',
+                        nascimento: 'Ano de Nascimento: 2012',
+                        raca: 'Raça: SRD',
+                        link: 'https://www.caosemdono.com.br/adote'})"
+            >
+              <img src="imagens/Batman.png" alt="Cachorro preto feliz" />
+              <h4 class="nome-animal">Batman</h4>
+            </div>
+            <div
+              class="animal"
+              onclick="openModal('imagens/Bebeto.png', {
+                        animalName: 'Bebeto', 
+                        sexo: 'Sexo: Macho',
+                        pelagem: 'Pelagem: Caramelo',
+                        peso: 'Peso: 19Kg',
+                        nascimento: 'Ano de Nascimento: 2015',
+                        raca: 'Raça: SRD',
+                        link: 'https://www.caosemdono.com.br/adote'})"
+            >
+              <img
+                src="imagens/Bebeto.png"
+                alt="Cachorro Caramelo sorrindo para a câmera"
+              />
+              <h4 class="nome-animal">Bebeto</h4>
+            </div>
+            <div
+              class="animal"
+              onclick="openModal('imagens/Carminha.png', {
+                        animalName: 'Carminha', 
+                        sexo: 'Sexo: Fêmea',
+                        pelagem: 'Pelagem: Bege e Preta',
+                        peso: 'Peso: 23Kg',
+                        nascimento: 'Ano de Nascimento: 2013',
+                        raca: 'Raça: SRD',
+                        link: 'https://www.caosemdono.com.br/adote'})"
+            >
+              <img
+                src="imagens/Carminha.png"
+                alt="Cachorra bege de lingua para fora"
+              />
+              <h4 class="nome-animal">Carminha</h4>
+            </div>
+            <div
+              class="animal"
+              onclick="openModal('imagens/Ema.png', {
+                        animalName: 'Ema', 
+                        sexo: 'Sexo: Fêmea',
+                        pelagem: 'Pelagem: Preta',
+                        peso: 'Peso: 16Kg',
+                        nascimento: 'Ano de Nascimento: 2014',
+                        raca: 'Raça: SRD',
+                        link: 'https://www.caosemdono.com.br/adote'})"
+            >
+              <img
+                src="imagens/Ema.png"
+                alt="Cachorra preta de olhos fechados"
+              />
+              <h4 class="nome-animal">Ema</h4>
+            </div>
+            <div
+              class="arrow"
+              id="arrow-right"
+              onclick="nextSlide('carrosel1')"
+            >
+              <img
+                src="imagens/seta-direita.png"
+                alt="seta para a direita"
+                width="20px"
+                height="20px"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="container-carrosel">
+          <h3>Gatos</h3>
+          <div class="arrow" id="arrow-left" onclick="prevSlide('carrosel2')">
+            <img
+              src="imagens/seta-esquerda.png"
+              alt="seta para a esquerda"
+              width="20px"
+              height="20px"
+            />
+          </div>
+          <div class="carrosel" id="carrosel2">
+            <div
+              class="animal"
+              onclick="openModal('imagens/Edwiges.jpg', {
+                        animalName: 'Edwiges', 
+                        sexo: 'Sexo: Fêmea',
+                        pelagem: 'Pelagem: Preta',
+                        olhos: 'Olhos: Verdes',
+                        nascimento: 'Ano de Nascimento: 2018',
+                        temperamento: 'Temperamento: Medrosa',
+                        link: 'https://www.gatopoles.com.br/gatinho_busca.php?search=edwiges'})"
+            >
+              <img
+                src="imagens/Edwiges.jpg"
+                alt="Gata preta olhando para a câmera"
+              />
+              <h4 class="nome-animal">Edwiges</h4>
+            </div>
+            <div
+              class="animal"
+              onclick="openModal('imagens/Malaga.jpg', {
+                        animalName: 'Málaga', 
+                        sexo: 'Sexo: Fêmea',
+                        pelagem: 'Pelagem: Preta',
+                        olhos: 'Olhos: Verdes',
+                        nascimento: 'Ano de Nascimento: 2023',
+                        temperamento: 'Temperamento: Carinhosa',
+                        link: 'https://www.gatopoles.com.br/gatinho_busca.php?search=malaga'})"
+            >
+              <img src="imagens/Malaga.jpg" alt="Gata preta sem um dos olhos" />
+              <h4 class="nome-animal">Málaga</h4>
+            </div>
+            <div
+              class="animal"
+              onclick="openModal('imagens/Paulinho.jpg', {
+                        animalName: 'Paulinho', 
+                        sexo: 'Sexo: Macho',
+                        pelagem: 'Pelagem: Preta e Branca',
+                        olhos: 'Olhos: Verdes',
+                        nascimento: 'Ano de Nascimento: 2019',
+                        temperamento: 'Temperamento: Carinhoso',
+                        link: 'https://www.gatopoles.com.br/gatinho_busca.php?search=paulinho'})"
+            >
+              <img
+                src="imagens/Paulinho.jpg"
+                alt="Gato olhando para a câmera enqunato brinca com um novelo de lã"
+              />
+              <h4 class="nome-animal">Paulinho</h4>
+            </div>
+            <div
+              class="animal"
+              onclick="openModal('imagens/Carambola.jpg', {
+                        animalName: 'Carambola', 
+                        sexo: 'Sexo: Macho',
+                        pelagem: 'Pelagem: Sialata',
+                        olhos: 'Olhos: Azuis',
+                        nascimento: 'Ano de Nascimento: 2016',
+                        temperamento: 'Temperamento: Carinhoso',
+                        link: 'https://www.gatopoles.com.br/gatinho_busca.php?search=carambola'})"
+            >
+              <img
+                src="imagens/Carambola.jpg"
+                alt="Gato em sua casinha olhando para o lado"
+              />
+              <h4 class="nome-animal">Carambola</h4>
+            </div>
+            <div
+              class="animal"
+              onclick="openModal('imagens/Thomas.jpg', {
+                        animalName: 'Thomas', 
+                        sexo: 'Sexo: Macho',
+                        pelagem: 'Pelagem: Sialata',
+                        olhos: 'Olhos: Azuis',
+                        nascimento: 'Ano de Nascimento: 2019',
+                        temperamento: 'Temperamento: Carinhoso',
+                        link: 'https://www.gatopoles.com.br/gatinho_busca.php?search=thomas'})"
+            >
+              <img src="imagens/Thomas.jpg" alt="Gato de lado" />
+              <h4 class="nome-animal">Thomas</h4>
+            </div>
+            <div
+              class="animal"
+              onclick="openModal('imagens/MarieLaure.jpg', {
+                        animalName: 'Marie Laure', 
+                        sexo: 'Sexo: Fêmea',
+                        pelagem: 'Pelagem: Branca',
+                        olhos: 'Olhos: não possui',
+                        nascimento: 'Ano de Nascimento: 2022',
+                        temperamento: 'Temperamento: Carinhosa',
+                        link: 'https://www.gatopoles.com.br/gatinho_busca.php?search=Marie+Laure'})"
+            >
+              <img src="imagens/MarieLaure.jpg" alt="Gata deitada de lado" />
+              <h4 class="nome-animal">Marie Laure</h4>
+            </div>
+          </div>
+          <div class="arrow" id="arrow-right" onclick="nextSlide('carrosel2')">
+            <img
+              src="imagens/seta-direita.png"
+              alt="seta para a direita"
+              width="20px"
+              height="20px"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="cidades" id="florianopolis">
+        <h2 class="nome-cidade">Florianópolis, SC</h2>
+        <div class="container-carrosel">
+          <h3>Cachorros</h3>
+          <div class="arrow" id="arrow-left" onclick="prevSlide('carrosel3')">
+            <img
+              src="imagens/seta-esquerda.png"
+              alt="seta para a esquerda"
+              width="20px"
+              height="20px"
+            />
+          </div>
+          <div class="carrosel" id="carrosel3">
+            <div
+              class="animal"
+              onclick="openModal('imagens/evora.jpeg', {
+                        animalName: 'Évora', 
+                        sexo: 'Sexo: Fêmea',
+                        pelagem: 'Pelagem: Branca e Marrom',
+                        porte: 'Porte: Médio - Grande',
+                        personalidade: 'Personalidade: Tranquila, leal e carinhosa',
+                        video: 'https://www.instagram.com/p/C0yvdmSgAN2/',
+                        link: 'https://www.instagram.com/direct/t/109501013779310'})"
+            >
+              <img
+                src="imagens/evora.jpeg"
+                alt="cachorra deitada sobre um edredom vermelho ao lado de um ossinho"
+              />
+              <h4 class="nome-animal">Évora</h4>
+            </div>
+            <div
+              class="animal"
+              onclick="openModal('imagens/elke.jpeg', {
+                        animalName: 'Elke', 
+                        sexo: 'Sexo: Fêmea',
+                        pelagem: 'Pelagem: Branca e Marrom',
+                        porte: 'Porte: Médio',
+                        personalidade: 'Personalidade: Alegre, carinhosa e companheira',
+                        video: 'https://www.instagram.com/p/C0yvdmSgAN2/',
+                        link: 'https://www.instagram.com/p/CzXCGPpADFv/'})"
+            >
+              <img src="imagens/elke.jpeg" alt="Cachorra feliz na grama" />
+              <h4 class="nome-animal">Elke</h4>
+            </div>
+            <div
+              class="animal"
+              onclick="openModal('imagens/cigana.jpeg', {
+                        animalName: 'Cigana', 
+                        sexo: 'Sexo: Fêmea',
+                        pelagem: 'Pelagem: Preta',
+                        porte: 'Porte: Médio',
+                        personalidade: 'Personalidade: Protetora, amorosa e brincalhona',
+                        condicao: 'Condição: Deve ser adotada com a Sereia',
+                        video: 'https://www.instagram.com/p/C0ywx-nARly/',
+                        link: 'https://www.instagram.com/direct/t/109501013779310'})"
+            >
+              <img
+                src="imagens/cigana.jpeg"
+                alt="Cachorra preta sorrindo para a câmera"
+              />
+              <h4 class="nome-animal">Cigana</h4>
+            </div>
+            <div
+              class="animal"
+              onclick="openModal('imagens/Sereia.jpeg', {
+                        animalName: 'Sereia', 
+                        sexo: 'Sexo: Fêmea',
+                        pelagem: 'Pelagem: Bege',
+                        porte: 'Porte: Médio',
+                        personalidade: 'Personalidade: Protetora, amorosa e brincalhona',
+                        condicao: 'Condição: Deve ser adotada com a Cigana',
+                        video: 'https://www.instagram.com/p/C0ywx-nARly/',
+                        link: 'https://www.instagram.com/direct/t/109501013779310'})"
+            >
+              <img
+                src="imagens/Sereia.jpeg"
+                alt="Cachorra bege de lingua para fora"
+              />
+              <h4 class="nome-animal">Sereia</h4>
+            </div>
+            <div
+              class="animal"
+              onclick="openModal('imagens/lord.jpeg', {
+                        animalName: 'Lord', 
+                        sexo: 'Sexo: Macho',
+                        pelagem: 'Pelagem: Preta',
+                        porte: 'Porte: Médio - Grande',
+                        personalidade: 'Personalidade: Sociável, protetor e brincalhão',
+                        video: 'https://www.instagram.com/p/Czlmd0qLg6A/',
+                        link: 'https://www.instagram.com/direct/t/109501013779310'})"
+            >
+              <img
+                src="imagens/lord.jpeg"
+                alt="Cachorro preto olhando para a câmera"
+              />
+              <h4 class="nome-animal">Lord</h4>
+            </div>
+          </div>
+          <div class="arrow" id="arrow-right" onclick="nextSlide('carrosel3')">
+            <img
+              src="imagens/seta-direita.png"
+              alt="seta para a direita"
+              width="20px"
+              height="20px"
+            />
+          </div>
+        </div>
+      </div>
+      <div id="animalModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+          <img id="modalImg" src="" alt="" />
+          <div id="modalText">
+            <h2 id="animalName"></h2>
+            <div id="animalDescription"></div>
+            <div id="modalButton">
+              <a id="quero-adotar" href="#" target="_blank"> Quero adotar </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div id="conteudo-footer">
+        <img src="imagens/logoNova-SF2.png" alt="logo Catog" id="logo-footer" />
+        <div id="paginas">
+          <h5>
+            <a href="sobre-nos.html">Sobre nós</a> <br /><br />
+            <a href="instituicoes.html">Instituições</a> <br /><br />
+            <a href="index.html">Adote</a>
+          </h5>
+        </div>
+        <div id="contato">
+          <h5>
+            Entre em contato conosco <br />
+            através do e-mail: <br />
+            <br />
+            contato.catog@gmail.com
+          </h5>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function nextSlide(carouselId) {
+        showSlides(carouselId, (slideIndex[carouselId] += getSlidesPerView()));
+      }
+
+      function prevSlide(carouselId) {
+        showSlides(carouselId, (slideIndex[carouselId] -= getSlidesPerView()));
+      }
+
+      function showSlides(carouselId, n) {
+        var i;
+        var slides = document
+          .getElementById(carouselId)
+          .getElementsByClassName("animal");
+
+        if (!slideIndex[carouselId]) {
+          slideIndex[carouselId] = 0;
+        }
+
+        const slidesPerView = getSlidesPerView();
+
+        if (n >= slides.length) {
+          slideIndex[carouselId] = 0;
+        }
+
+        if (n < 0) {
+          slideIndex[carouselId] = slides.length - slidesPerView;
+        }
+
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+
+        for (
+          i = slideIndex[carouselId];
+          i < slideIndex[carouselId] + slidesPerView;
+          i++
+        ) {
+          if (slides[i]) {
+            slides[i].style.display = "block";
+          }
+        }
+      }
+
+      // Inicializa os carrosséis
+      function initializeCarousels() {
+        var carousels = document.getElementsByClassName("carrosel");
+        for (var i = 0; i < carousels.length; i++) {
+          showSlides(carousels[i].id, 0); // Deixa visivel os primeiros animais
+        }
+      }
+
+      function getSlidesPerView() {
+        return window.innerWidth <= 768 ? 2 : 3;
+      }
+
+      var slideIndex = {};
+
+      window.onload = initializeCarousels; // Inicializa os carrosséis quando a página carregar
+      window.onresize = initializeCarousels;
+
+      function openModal(imageSrc, options) {
+        while (animalDescription.firstChild) {
+          animalDescription.removeChild(animalDescription.firstChild);
+        }
+
+        var modal = document.getElementById("animalModal");
+        var modalImg = document.getElementById("modalImg");
+        var animalNameElement = document.getElementById("animalName");
+        var queroAdotar = document.getElementById("quero-adotar");
+        var sexoElement = document.getElementById("sexo");
+        var pelagemElement = document.getElementById("pelagem");
+        var pesoElement = document.getElementById("peso");
+        var nascimentoElement = document.getElementById("nascimento");
+        var racaElement = document.getElementById("raca");
+
+        modal.style.display = "block";
+        modalImg.src = imageSrc;
+        animalNameElement.textContent = options.animalName;
+
+        function addParagraph(info) {
+          var p = document.createElement("p");
+          p.textContent = info;
+          animalDescription.appendChild(p);
+        }
+
+        function addVideoLink(videoUrl, animalName) {
+          var a = document.createElement("a");
+          a.textContent = "Veja um vídeo da " + animalName;
+          a.href = videoUrl;
+          a.target = "_blank"; // Abrir o link em uma nova aba
+          var p = document.createElement("p");
+          p.appendChild(a);
+          animalDescription.appendChild(p);
+        }
+
+        if (options) {
+          if (options.sexo) {
+            addParagraph(options.sexo);
+          }
+          if (options.pelagem) {
+            addParagraph(options.pelagem);
+          }
+          if (options.porte) {
+            addParagraph(options.porte);
+          }
+          if (options.olhos) {
+            addParagraph(options.olhos);
+          }
+          if (options.peso) {
+            addParagraph(options.peso);
+          }
+          if (options.nascimento) {
+            addParagraph(options.nascimento);
+          }
+          if (options.temperamento) {
+            addParagraph(options.temperamento);
+          }
+          if (options.personalidade) {
+            addParagraph(options.personalidade);
+          }
+          if (options.condicao) {
+            addParagraph(options.condicao);
+          }
+          if (options.video) {
+            addVideoLink(options.video, options.animalName);
+          }
+          if (options.raca) {
+            addParagraph(options.raca);
+          }
+          if (options.link) {
+            queroAdotar.href = options.link;
+          }
+        }
+      }
+
+      function closeModal() {
+        var modal = document.getElementById("animalModal");
+        var animalDescription = document.getElementById("animalDescription");
+
+        modal.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
